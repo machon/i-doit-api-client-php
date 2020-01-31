@@ -276,6 +276,7 @@ class API {
             CURLOPT_REDIR_PROTOCOLS => (CURLPROTO_HTTP | CURLPROTO_HTTPS),
             CURLOPT_ENCODING => 'application/json',
             CURLOPT_URL => $this->config[self::URL],
+            CURLOPT_HTTP_VERSION => 2,
             // In seconds:
             CURLOPT_CONNECTTIMEOUT => 10,
             CURLOPT_HTTPHEADER => [
